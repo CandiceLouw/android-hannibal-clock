@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Will Graham Clock | Hannibal</title>
+		
+		<style>
+			/* html5reset.css - 01/11/2011 */
+
+			html, body, div, span, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			abbr, address, cite, code,
+			del, dfn, em, img, ins, kbd, q, samp,
+			small, strong, sub, sup, var,
+			b, i,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				outline: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+				background: transparent;
+			}
+
+			body {
+				line-height: 1;
+			}
+
+			article,aside,details,figcaption,figure,
+			footer,header,hgroup,menu,nav,section { 
+				display: block;
+			}
+
+			nav ul {
+				list-style: none;
+			}
+
+			blockquote, q {
+				quotes: none;
+			}
+
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+
+			a {
+				margin: 0;
+				padding: 0;
+				font-size: 100%;
+				vertical-align: baseline;
+				background: transparent;
+				color: #000;
+			}
+
+			/* change colours to suit your needs */
+			ins {
+				background-color: #ff9;
+				color: #000;
+				text-decoration: none;
+			}
+
+			/* change colours to suit your needs */
+			mark {
+				background-color: #ff9;
+				color: #000; 
+				font-style: italic;
+				font-weight: bold;
+			}
+
+			del {
+				text-decoration:  line-through;
+			}
+
+			abbr[title], dfn[title] {
+				border-bottom: 1px dotted;
+				cursor: help;
+			}
+
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+			/* change border colour to suit your needs */
+			hr {
+				display: block;
+				height: 1px;
+				border: 0;   
+				border-top: 1px solid #cccccc;
+				margin: 1em 0;
+				padding: 0;
+			}
+
+			input, select {
+				vertical-align: middle;
+			}
+			/*  SECTIONS  */
+			.section {
+				clear: both;
+				padding: 0px;
+				margin: 0px;
+			}
+
+			/*  COLUMN SETUP  */
+			.col {
+				display: block;
+				float:left;
+				margin: 1% 0 1% 1%;
+			}
+			.col:first-child { margin-left: 0; }
+
+			/*  GROUPING  */
+			.group:before,
+			.group:after { content:""; display:table; }
+			.group:after { clear:both;}
+			.group { zoom:1; /* For IE 6/7 */ }
+			* {
+			  box-sizing: border-box;
+			  font-family: arial, sans-serif;
+			  margin: 0px;
+			}
+			
+			/*  GRID OF TWO  */
+			.span_2_of_2 {
+				width: 100%;
+			}
+			.span_1_of_2 {
+				width: 49.5%;
+			}
+
+			/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+			@media only screen and (max-width: 480px) {
+				.col { 
+					margin: 1% 0 1% 0%;
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
+				.span_2_of_2, .span_1_of_2 { width: 100%; }
+			}
+			
+			body{
+				background-color:#fff;
+			}
+
+			.heading{
+				width: 100%;
+				background-color: #eee;
+				text-align:center;
+				padding: 2% 0% 4% 0%;
+				font-size: 24px;
+				color: #0f4d21;
+			}
+			
+			.box{
+				max-width: 980px;
+				width: 100%;
+				vertical-align:center;
+				margin: auto;
+				padding: 0;
+				
+			}
+			
+			i{
+				color: #0f4d21;
+			}
+			
+			
+			/* Style the buttons that are used to open and close the accordion panel */
+			.accordion {
+				background-color: #efefef;
+				color: #000;
+				cursor: pointer;
+				padding: 18px;
+				width: 100%;
+				text-align: center;
+				border: none;
+				outline: none;
+				transition: 0.4s;
+			}
+
+			/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+			.active, .accordion:hover {
+				background-color: #ccc;
+			}
+
+			/* Style the accordion panel. Note: hidden by default */
+			.panel {
+				padding: 0 18px;
+				background-color: white;
+				display: block;
+				overflow: block;
+			}
+
+			p{
+			text-align: justify;
+			}
+			
+			.language{
+				background-color: #efefef;
+				color: #000;
+				padding: 18px;
+				width: 100%;
+				text-align: center;
+				border: none;
+				outline: none;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="box">
+			<div class="section group">
+				<div class="col span_1_of_2">
+					<!--<button class="accordion">&#x24d8;<br/>EN</button>-->
+					<div class="language">&#x24d8;<br/>EN</div>
+					<div class="panel">
+
+							<br/><br/>
+							Thank you for installing Hannibal | Will Graham Clock Widget.
+							<br/><br/>
+							Please note that this is a widget and you will have to manually install your chosen widget on your homescreen.  
+							<br/><br/>
+							For further assistance please see <a href="https://support.google.com/clock/answer/6139447?hl=en" target="_blank">this link</a>.
+							<br/><br/>
+							If you like the app, please remember to rate/review it on <a href="https://play.google.com/store/apps/details?id=com.graham.hannibalclock&hl=en" target="_blank">Google Play</a>.
+						<br/><br/>
+						</p>
+					</div>					
+				</div>
+				
+				<div class="col span_1_of_2">
+					<div class="language">&#x24d8;<br/>FR</div>
+					<div class="panel">
+						<p>
+							<br/><br/>
+							Merci d'avoir installer Hannibal | Will Graham Clock Widget.
+							<br/><br/>
+							Cette appli contient des widgets et vous devez ajouter chaque widget sur votre &#x00e9;cran d'accueil vous-m&#x00ea;me.
+							<br/><br/>
+							Pour assistance consultez <a href="https://support.google.com/clock/answer/6139447?hl=fr" target="_blank">ce lien</a>.
+							<br/><br/>
+							Si vous aimez le widget, vous pouvez le recommander sur <a href="https://play.google.com/store/apps/details?id=com.graham.hannibalclock&hl=fr" target="_blank">Google Play</a>.
+							<br/><br/>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section group">
+				<div class="col span_2_of_2">
+					
+					<div class="language">&#x24d8;<br/>AF</div>
+					<div class="panel">
+						<p>
+							<br/><br/>
+							Baie dankie vir die installasie van Hannibal | Will Graham Clock Widget.
+							<br/><br/>
+							Neem asseblief kennis dat hierdie toepassing uit individuele komponente (widgets) bestaan wat per hand op 'n skerm geplaas moet word.  
+							<br/><br/>
+							Vir verder bystand en hulp met die proses sien asseblief die volgende <a href="https://support.google.com/clock/answer/6139447?hl=en" target="_blank">skakel</a>.
+							<br/><br/>
+							Indien u van die toepassing hou, dui dit asseblief aan op <a href="https://play.google.com/store/apps/details?id=com.graham.hannibalclock&hl=en" target="_blank">Google Play</a>.
+							<br/><br/>
+						</p>
+					</div>					
+				</div>
+			</div>
+			
+		</div>
+		
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		<br/><br/>
+		
+		<!--<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					/* Toggle between adding and removing the "active" class,
+					to highlight the button that controls the panel */
+					this.classList.toggle("active");
+
+					/* Toggle between hiding and showing the active panel */
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>-->
+
+	</body>
+</html>

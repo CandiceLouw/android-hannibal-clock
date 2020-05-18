@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Widget" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <AnalogClock android:id="@+id/thin_black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dial="@mipmap/dial_new_black"
+        android:hand_hour="@mipmap/hour_new_black"
+        android:hand_minute="@mipmap/minute_new_black"/>
+</RelativeLayout>
