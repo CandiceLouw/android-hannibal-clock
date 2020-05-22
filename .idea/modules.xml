@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/HannibalClock.iml" filepath="$PROJECT_DIR$/HannibalClock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HannibalClock.iml" filepath="$PROJECT_DIR$/HannibalClock.iml" group="HannibalClock" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="HannibalClock/app" />
     </modules>
   </component>
 </project>
