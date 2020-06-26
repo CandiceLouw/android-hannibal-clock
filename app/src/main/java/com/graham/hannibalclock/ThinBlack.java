@@ -39,14 +39,7 @@ public class ThinBlack extends AppWidgetProvider{
                             "com.sonyericsson.organizer.Organizer_WorldClock" },
                     { "Sony Ericsson", "com.sonyericsson.alarm", "com.sonyericsson.alarm.Alarm" },
                     { "Samsung", "com.sec.android.app.clockpackage",
-                            "com.sec.android.app.clockpackage.ClockPackage" } ,
-                    {"HTC Alarm Clock", "com.htc.android.worldclock", "com.htc.android.worldclock.WorldClockTabControl" },
-                    {"Standard Alarm Clock", "com.android.deskclock", "com.android.deskclock.AlarmClock"},
-                    {"Froyo Nexus Alarm Clock", "com.google.android.deskclock", "com.android.deskclock.DeskClock"},
-                    {"Moto Blur Alarm Clock", "com.motorola.blur.alarmclock",  "com.motorola.blur.alarmclock.AlarmClock"},
-                    {"Samsung Galaxy Clock", "com.sec.android.app.clockpackage","com.sec.android.app.clockpackage.ClockPackage"} ,
-                    {"Sony Ericsson Xperia Z", "com.sonyericsson.organizer", "com.sonyericsson.organizer.Organizer_WorldClock" },
-                    {"ASUS Tablets", "com.asus.deskclock", "com.asus.deskclock.DeskClock"}
+                            "com.sec.android.app.clockpackage.ClockPackage" }
             };
 
             boolean foundClockImpl = false;
