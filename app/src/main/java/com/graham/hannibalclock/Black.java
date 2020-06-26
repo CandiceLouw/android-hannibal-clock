@@ -28,7 +28,7 @@ public class Black extends AppWidgetProvider {
             String clockImpls[][] = {
                     { "HTC", "com.htc.android.worldclock",
                             "com.htc.android.worldclock.WorldClockTabControl" },
-                    {"Standar Alarm Clock2", "com.google.android.deskclock",
+                    {"Standard Alarm Clock2", "com.google.android.deskclock",
                             "com.android.deskclock.AlarmClock"},
                     { "Standard", "com.android.deskclock",
                             "com.android.deskclock.AlarmClock" },
@@ -40,7 +40,15 @@ public class Black extends AppWidgetProvider {
                             "com.sonyericsson.organizer.Organizer_WorldClock" },
                     { "Sony Ericsson", "com.sonyericsson.alarm", "com.sonyericsson.alarm.Alarm" },
                     { "Samsung", "com.sec.android.app.clockpackage",
-                            "com.sec.android.app.clockpackage.ClockPackage" } };
+                            "com.sec.android.app.clockpackage.ClockPackage" } ,
+                    {"HTC Alarm Clock", "com.htc.android.worldclock", "com.htc.android.worldclock.WorldClockTabControl" },
+                    {"Standard Alarm Clock", "com.android.deskclock", "com.android.deskclock.AlarmClock"},
+                    {"Froyo Nexus Alarm Clock", "com.google.android.deskclock", "com.android.deskclock.DeskClock"},
+                    {"Moto Blur Alarm Clock", "com.motorola.blur.alarmclock",  "com.motorola.blur.alarmclock.AlarmClock"},
+                    {"Samsung Galaxy Clock", "com.sec.android.app.clockpackage","com.sec.android.app.clockpackage.ClockPackage"} ,
+                    {"Sony Ericsson Xperia Z", "com.sonyericsson.organizer", "com.sonyericsson.organizer.Organizer_WorldClock" },
+                    {"ASUS Tablets", "com.asus.deskclock", "com.asus.deskclock.DeskClock"}
+            };
 
                     boolean foundClockImpl = false;
 
