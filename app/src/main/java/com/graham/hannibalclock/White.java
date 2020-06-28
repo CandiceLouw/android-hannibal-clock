@@ -7,6 +7,7 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.provider.AlarmClock;
 import android.widget.RemoteViews;
 
 
@@ -19,8 +20,11 @@ public class White extends AppWidgetProvider{
         String action = intent.getAction();
         PendingIntent pendingIntent;
 
+
+
         if (AppWidgetManager.ACTION_APPWIDGET_UPDATE.equals(action))
         {
+
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.white);
 
             PackageManager packageManager = context.getPackageManager();
@@ -64,8 +68,18 @@ public class White extends AppWidgetProvider{
                     pendingIntent = PendingIntent.getActivity(context, 0, alarmClockIntent, 0);
                     views.setOnClickPendingIntent(R.id.Widget, pendingIntent);
                     AppWidgetManager.getInstance(context).updateAppWidget(intent.getIntArrayExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS), views);
+                }else{
+                    //Added on 20200626 -- remove if causing issues with device behaviour
+                    Intent in = new Intent(AlarmClock.ACTION_SET_ALARM);
+                    in.putExtra(AlarmClock.EXTRA_MESSAGE, "New Alarm");
+                    in.putExtra(AlarmClock.EXTRA_HOUR, 10);
+                    in.putExtra(AlarmClock.EXTRA_MINUTES, 30);
+                    context.startActivity(in);
                 }
             }
+
+
+
 
         }
 
